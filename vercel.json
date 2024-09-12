@@ -1,18 +1,19 @@
 {
-    "projects": [
+    "builds": [
       {
-        "name": "web",
-        "root": "apps/web"
+        "src": "apps/web/package.json",
+        "use": "@vercel/next"
       },
       {
-        "name": "api",
-        "root": "apps/api"
+        "src": "apps/api/package.json",
+        "use": "@vercel/node"
       }
     ],
-    "functions": {
-      "api/**/*.js": {
-        "runtime": "nodejs14.x"
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "/apps/api/$1"
       }
-    }
+    ]
   }
   
