@@ -21,22 +21,22 @@ export type T_GetParams = {
 export class FileService {
   private s3ProviderClient: S3Client;
   private config: S3ClientConfig;
-  private AWS_REGION: string;
-  private AWS_ACCESS_KEY: string;
-  private AWS_SECRET_ACCESS_KEY: string;
+  private AWS_REGION1: string;
+  private AWS_ACCESS_KEY1: string;
+  private AWS_SECRET_ACCESS_KEY1: string;
   private BUCKET_NAME: string;
 
   constructor() {
-    this.AWS_REGION = process.env.AWS_REGION || "";
-    this.AWS_ACCESS_KEY = process.env.AWS_ACCESS_KEY || "";
-    this.AWS_SECRET_ACCESS_KEY = process.env.AWS_SECRET_ACCESS_KEY || "";
+    this.AWS_REGION1 = process.env.AWS_REGION1 || "";
+    this.AWS_ACCESS_KEY1 = process.env.AWS_ACCESS_KEY1 || "";
+    this.AWS_SECRET_ACCESS_KEY1 = process.env.AWS_SECRET_ACCESS_KEY1 || "";
     this.BUCKET_NAME = "breeders-link";
 
     this.config = {
-      region: this.AWS_REGION,
+      region: this.AWS_REGION1,
       credentials: {
-        accessKeyId: this.AWS_ACCESS_KEY,
-        secretAccessKey: this.AWS_SECRET_ACCESS_KEY,
+        accessKeyId: this.AWS_ACCESS_KEY1,
+        secretAccessKey: this.AWS_SECRET_ACCESS_KEY1,
       },
     };
 

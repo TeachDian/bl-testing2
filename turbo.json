@@ -12,8 +12,8 @@
         "WEB_URL",
         "API_URL",
         "NODE_ENV",
-        "REDIS_PASSWORD",
-        "REDIS_URL"
+        "REDIS_PASSWORD1",
+        "REDIS_URL1"
       ]
     },
     "lint": {

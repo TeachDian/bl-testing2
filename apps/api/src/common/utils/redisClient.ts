@@ -1,8 +1,8 @@
 import { createClient } from "redis";
-import { REDIS_URL } from "../constants/ev";
+import { REDIS_URL1 } from "../constants/ev";
 
 const redisClient = createClient({
-  url: REDIS_URL,
+  url: REDIS_URL1,
   pingInterval: 1000 * 60 * 60,
 });
 
