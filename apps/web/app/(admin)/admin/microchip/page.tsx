@@ -1,4 +1,4 @@
-import Microchip from '@/module/Admin/Microchip'
+import Microchip from '@/module/Admin/microchip'
 import React from 'react'
 
 const AdminMicrochipPage = () => {
